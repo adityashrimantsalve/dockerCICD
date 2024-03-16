@@ -2,7 +2,7 @@
 FROM httpd
 
 # Copy the HTML file into the Nginx document root
-COPY index.html /usr/local/apache2/htdocs/
+RUN echo "hello thank you for using Jenkins" /usr/local/apache2/htdocs/index.html
 
 # Expose port 80 to allow external access
 EXPOSE 80
